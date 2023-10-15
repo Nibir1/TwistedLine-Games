@@ -1,0 +1,107 @@
+---
+import HeaderLink from "../components/HeaderLink.astro";
+import "../styles/reset.css";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const today = new Date();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="TwistedLine Games" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/ico+xml" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar&family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <section class="whole-container">
+      <section class="left-container">
+        <a href="/">
+          <img
+            class="twistedline-home-logo"
+            src="/Twisted_Line_Games_Logo_Inactive.svg"
+            alt="TwistedLine Games Logo"
+          />
+        </a>
+
+        <section class="social-icons">
+          <a href="https://www.youtube.com/@TwistedlineGames" target="_blank">
+            <img src="/Youtube_inactive.svg" />
+          </a>
+          <img src="/Instagram_inactive.svg" />
+          <a
+            href=" https://store.steampowered.com/search/?developer=Twistedline%20Games"
+            target="_blank"
+          >
+            <img src="/Steam_inactive.svg" />
+          </a>
+        </section>
+
+        <section class="copyright">
+          <h1>
+            &copy; {today.getFullYear()} Chronophase. All rights reserved.
+          </h1>
+        </section>
+      </section>
+
+      <section class="mid-cotainer">
+        <section class="nav-links">
+          <img src="/Eye_Logo_inactive.svg" alt="Eye Logo" />
+          <HeaderLink href="/about_us" class="nav-buttons">About Us</HeaderLink>
+          <HeaderLink href="/careers" class="nav-buttons">Careers</HeaderLink>
+          <HeaderLink href="/projects" class="nav-buttons">Projects</HeaderLink>
+          <HeaderLink href="/contacts" class="nav-buttons">Contacts</HeaderLink>
+        </section>
+
+        <section class="nav-horizontal-line"></section>
+
+        <h1 class="play-our-games">ᛈ ᛚ ᚨ ᛃ ᛟ ᚢ ᚱ ᚷ ᚨ ᛗ ᛇ ᛊ</h1>
+
+        <slot />
+
+        <section class="footer">
+          <section class="footer-horizontal-line"></section>
+          <h1>
+            Forge legendary worlds, where ancestral echoes clash in code's
+            thunder. Sail the digital seas, let our games be the guiding saga
+            for generations yet to come
+          </h1>
+        </section>
+      </section>
+      <section class="vertical-line"></section>
+      <section class="right-container">
+        <h1>DEVELOPER NEWS</h1>
+        <h1>PATCH 1.1</h1>
+        <ul>
+          <li>New Story Arcs</li>
+          <li>Expanded Character Interactions</li>
+          <li>Enhanced Visuals and Atmosphere</li>
+          <li>Gameplay Balancing and Optimization</li>
+        </ul>
+        <a
+          href="https://store.steampowered.com/app/2292160/Remorses/"
+          target="_blank"
+        >
+          <button>Read More</button>
+        </a>
+        <img src="/Tree_inactive.svg" alt="Tree Image" />
+      </section>
+    </section>
+  </body>
+</html>
