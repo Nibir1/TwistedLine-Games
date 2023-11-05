@@ -146,6 +146,10 @@ code {
   width: auto;
 }
 
+.whole-container .right-container .copyright-mobile {
+  display: none;
+}
+
 /* ----- This is the vertical-line css ---------- */
 .whole-container .vertical-line {
   height: 100vh;
@@ -153,13 +157,13 @@ code {
 }
 
 /* ------- From here starts the mid container & navigation container css ------- */
-.whole-container .mid-cotainer {
+.whole-container .mid-container {
   display: flex;
   flex-direction: column;
   background-color: #e6e6e6;
 }
 
-.whole-container .mid-cotainer .nav-links {
+.whole-container .mid-container .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -168,10 +172,10 @@ code {
   margin-top: 10px;
 }
 
-.whole-container .mid-cotainer .nav-links img:hover {
+.whole-container .mid-container .nav-links img:hover {
   content: url("/Eye_Logo_hover.svg");
 }
-.whole-container .mid-cotainer .nav-links .nav-buttons {
+.whole-container .mid-container .nav-links .nav-buttons {
   color: #3d3b43;
   font-family: Norse;
   font-size: 35px;
@@ -182,7 +186,7 @@ code {
   position: relative;
 }
 
-.whole-container .mid-cotainer .nav-links .nav-buttons::after {
+.whole-container .mid-container .nav-links .nav-buttons::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -194,17 +198,17 @@ code {
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
-.whole-container .mid-cotainer .nav-links .nav-buttons:hover:after {
+.whole-container .mid-container .nav-links .nav-buttons:hover:after {
   opacity: 1;
 }
-.whole-container .mid-cotainer .nav-horizontal-line {
+.whole-container .mid-container .nav-horizontal-line {
   width: 60vw;
   border-top: 6px solid #cacaca;
   margin-top: 5px;
   margin-left: 80px;
 }
 
-.whole-container .mid-cotainer .play-our-games {
+.whole-container .mid-container .play-our-games {
   color: #3d3b43;
   font-family: Norse;
   font-size: 35px;
@@ -217,13 +221,13 @@ code {
 }
 
 /* ----- This margin top & bottom = Auto is keeping the mid details at the middle ----- */
-.whole-container .mid-cotainer .mid-details {
+.whole-container .mid-container .mid-details {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 30px;
 }
 
-.whole-container .mid-cotainer .mid-details .number {
+.whole-container .mid-container .mid-details .number {
   color: #3d3b43;
   font-family: Norse;
   font-size: 80px;
@@ -231,7 +235,7 @@ code {
   font-weight: 400;
   line-height: 0px;
 }
-.whole-container .mid-cotainer .mid-details .headline {
+.whole-container .mid-container .mid-details .headline {
   color: #3d3b43;
   font-family: Teko;
   font-size: 80px;
@@ -240,7 +244,7 @@ code {
 
   margin-top: 50px;
 }
-.whole-container .mid-cotainer .mid-details .motto {
+.whole-container .mid-container .mid-details .motto {
   color: #3d3b43;
   font-family: Norse;
   font-size: 20px;
@@ -250,7 +254,7 @@ code {
 
   margin-top: 5px;
 }
-.whole-container .mid-cotainer .mid-details .paragraph {
+.whole-container .mid-container .mid-details .paragraph {
   color: #3d3b43;
   text-align: justify;
   font-family: Akshar;
@@ -263,7 +267,7 @@ code {
   margin-top: 10px;
 }
 
-.whole-container .mid-cotainer .mid-details button {
+.whole-container .mid-container .mid-details button {
   width: 206px;
   height: 53px;
 
@@ -281,7 +285,7 @@ code {
   margin-left: 400px;
   margin-top: 30px;
 }
-.whole-container .mid-cotainer .mid-details button:hover {
+.whole-container .mid-container .mid-details button:hover {
   transform: scale(1.02);
 }
 
@@ -289,16 +293,16 @@ code {
   margin-left: -250px;
 }
 
-.whole-container .mid-cotainer .footer {
+.whole-container .mid-container .footer {
   margin-left: 80px;
 }
 
-.whole-container .mid-cotainer .footer .footer-horizontal-line {
+.whole-container .mid-container .footer .footer-horizontal-line {
   width: 60vw;
   border-top: 6px solid #cacaca;
 }
 
-.whole-container .mid-cotainer .footer h1 {
+.whole-container .mid-container .footer h1 {
   color: #3d3b43;
   text-align: center;
   font-family: Norse;
@@ -328,12 +332,35 @@ a {
   .whole-container .left-container {
     width: 100%;
     min-width: 0;
+
+    height: 40vh;
+  }
+
+  .whole-container .left-container .copyright {
+    display: none;
+  }
+
+  .whole-container .left-container .social-icons {
+    margin-bottom: 10px;
   }
 
   /* Right container */
   .whole-container .right-container {
     width: 100%;
     min-width: 0;
+  }
+  .whole-container .right-container .copyright-mobile {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 5px;
+
+    color: #3d3b43;
+    font-family: Akshar;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
   }
 
   /* Vertical line */
@@ -345,62 +372,70 @@ a {
   }
 
   /* Mid container */
-  .whole-container .mid-cotainer {
+  .whole-container .mid-container {
     width: 100%;
     margin-left: 0;
   }
 
   /* Mid container navigation links */
-  .whole-container .mid-cotainer .nav-links {
-    flex-direction: column;
-    justify-content: center;
+  .whole-container .mid-container .nav-links {
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   /* Mid container navigation buttons */
-  .whole-container .mid-cotainer .nav-buttons {
+  .whole-container .mid-container .nav-links .nav-buttons {
     font-size: 20px;
   }
 
   /* Mid container horizontal line */
-  .whole-container .mid-cotainer .nav-horizontal-line {
+  .whole-container .mid-container .nav-horizontal-line {
     width: 100%;
     margin-left: 0;
   }
 
   /* Mid container play our games text */
-  .whole-container .mid-cotainer .play-our-games {
-    margin-left: 0;
+  .whole-container .mid-container .play-our-games {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
   }
 
   /* Mid container mid details */
-  .whole-container .mid-cotainer .mid-details {
-    margin-left: 0;
+  .whole-container .mid-container .mid-details {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   /* Mid container mid details number */
-  .whole-container .mid-cotainer .mid-details .number {
+  .whole-container .mid-container .mid-details .number {
+    margin-top: 80px;
     font-size: 60px;
   }
 
   /* Mid container mid details headline */
-  .whole-container .mid-cotainer .mid-details .headline {
+  .whole-container .mid-container .mid-details .headline {
     font-size: 60px;
   }
 
   /* Mid container mid details motto */
-  .whole-container .mid-cotainer .mid-details .motto {
+  .whole-container .mid-container .mid-details .motto {
     font-size: 16px;
   }
 
   /* Mid container mid details paragraph */
-  .whole-container .mid-cotainer .mid-details .paragraph {
-    width: 100%;
+  .whole-container .mid-container .mid-details .paragraph {
+    width: 97%;
     font-size: 20px;
+    line-height: 32px;
+    padding-left: 5px;
   }
 
   /* Mid container mid details button */
-  .whole-container .mid-cotainer .mid-details button {
+  .whole-container .mid-container .mid-details button {
     width: 150px;
     height: 40px;
     margin-left: 0;
@@ -408,21 +443,22 @@ a {
 
   /* Two buttons */
   .two-buttons {
-    margin-left: 0;
+    margin-inline: 80px;
   }
 
   /* Mid container footer */
-  .whole-container .mid-cotainer .footer {
+  .whole-container .mid-container .footer {
     margin-left: 0;
   }
 
   /* Mid container footer horizontal line */
-  .whole-container .mid-cotainer .footer .footer-horizontal-line {
+  .whole-container .mid-container .footer .footer-horizontal-line {
     width: 100%;
+    margin-top: 15px;
   }
 
   /* Mid container footer heading */
-  .whole-container .mid-cotainer .footer h1 {
+  .whole-container .mid-container .footer h1 {
     font-size: 18px;
   }
 }
