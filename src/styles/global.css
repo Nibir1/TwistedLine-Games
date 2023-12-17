@@ -490,7 +490,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 0.1fr);
     grid-gap: 5px;
-    margin-left: 7px;
+    margin-left: 6px;
   }
 
   .whole-container .mid-container .mid-details .remorses-snapshots img {
