@@ -373,6 +373,7 @@ a {
   }
 
   .whole-container .left-container .join-discord {
+    margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
   }
