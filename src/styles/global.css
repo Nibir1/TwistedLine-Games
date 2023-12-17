@@ -490,13 +490,17 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 0.1fr);
     grid-gap: 5px;
-    margin-left: 3px;
+    margin-left: 7px;
   }
 
   .whole-container .mid-container .mid-details .remorses-snapshots img {
-    width: 128px;
-    height: 77.38px;
+    width: 125px;
+    height: 74.38px;
     border-radius: 7px;
+  }
+
+  .whole-container .mid-container .mid-details .remorses-snapshots img:hover {
+    transform: none;
   }
 
   /* Mid container mid details button */
