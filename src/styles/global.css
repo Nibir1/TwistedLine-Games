@@ -168,7 +168,6 @@ code {
   display: flex;
   flex-direction: column;
   background-color: #e6e6e6;
-  background-image: url("/public/background_picture_mid.png");
 }
 
 .whole-container .mid-container .nav-links {
@@ -184,8 +183,8 @@ code {
   content: url("/Eye_Logo_hover.svg");
 }
 .whole-container .mid-container .nav-links .nav-buttons {
-  /* color: #3d3b43; */
-  color: #e6e6e6;
+  color: #3d3b43;
+  /* color: #e6e6e6; */
   font-family: Norse;
   font-size: 35px;
   font-style: normal;
@@ -202,8 +201,8 @@ code {
   left: 0;
   width: 100%;
   height: 2px;
-  /* background-color: #3d3b43; */
-  background-color: #e6e6e6;
+  background-color: #3d3b43;
+  /* background-color: #e6e6e6; */
   transform: translate(0, -50%);
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
@@ -212,15 +211,14 @@ code {
   opacity: 1;
 }
 .whole-container .mid-container .nav-horizontal-line {
-  width: 60vw;
+  width: 65vw;
   border-top: 6px solid #cacaca;
   margin-top: 5px;
-  margin-left: 80px;
 }
 
 .whole-container .mid-container .play-our-games {
-  /* color: #3d3b43; */
-  color: #e6e6e6;
+  color: #3d3b43;
+  /* color: #e6e6e6; */
   font-family: Norse;
   font-size: 35px;
   font-style: normal;
@@ -233,11 +231,9 @@ code {
 
 /* ----- This margin top & bottom = Auto is keeping the mid details at the middle ----- */
 .whole-container .mid-container .mid-details {
-  margin-top: auto;
+  margin-top: 30px;
   margin-bottom: auto;
-  margin-left: 30px;
-  /* overflow: auto;
-  height: 700px; */
+  /* margin-left: 30px; */
 }
 
 .whole-container .mid-container .mid-details .number {
@@ -249,18 +245,19 @@ code {
   line-height: 0px;
 }
 .whole-container .mid-container .mid-details .headline {
-  /* color: #3d3b43; */
-  color: #e6e6e6;
+  color: #3d3b43;
+  /* color: #e6e6e6; */
   font-family: Teko;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
 
   margin-top: 50px;
+  margin-left: 30px;
 }
 .whole-container .mid-container .mid-details .motto {
-  /* color: #3d3b43; */
-  color: #e6e6e6;
+  color: #3d3b43;
+  /* color: #e6e6e6; */
   font-family: Norse;
   font-size: 20px;
   font-style: normal;
@@ -268,10 +265,11 @@ code {
   letter-spacing: 3px;
 
   margin-top: 5px;
+  margin-left: 30px;
 }
 .whole-container .mid-container .mid-details .paragraph {
-  /* color: #3d3b43; */
-  color: #e6e6e6;
+  color: #3d3b43;
+  /* color: #e6e6e6; */
   text-align: justify;
   font-family: Akshar;
   font-size: 25px;
@@ -281,17 +279,27 @@ code {
 
   width: 60vw;
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 .whole-container .mid-container .mid-details .remorses-snapshots {
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   grid-gap: 10px;
+  margin-left: 30px;
 }
 
+iframe {
+  border-style: groove;
+  border-color: #cacaca;
+  border-width: 2px;
+}
 .whole-container .mid-container .mid-details .remorses-snapshots img {
   width: 360px;
   height: 225px;
+  border-style: groove;
+  border-color: #cacaca;
+  border-width: 2px;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
 }
@@ -305,7 +313,7 @@ code {
   background-image: url("/wishlist_button.png");
   border-radius: 4px;
   border-width: 3px;
-  border-color: #3d3b43;
+  border-color: #cacaca;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   width: 380px;
   height: 100px;
@@ -316,18 +324,14 @@ code {
   transform: scale(1.02);
 }
 
-.whole-container .mid-container .footer {
-  margin-left: 80px;
-}
-
-.whole-container .mid-container .footer .footer-horizontal-line {
-  width: 60vw;
+.whole-container .mid-container .footer-horizontal-line {
+  width: 65vw;
   border-top: 6px solid #cacaca;
 }
 
 .whole-container .mid-container .footer h1 {
-  /* color: #3d3b43; */
-  color: #e6e6e6;
+  color: #3d3b43;
+  /* color: #e6e6e6; */
   text-align: center;
   font-family: Norse;
   font-size: 22px;
@@ -478,16 +482,22 @@ a {
 
   /* Mid container mid details headline */
   .whole-container .mid-container .mid-details .headline {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 60px;
   }
 
   /* Mid container mid details motto */
   .whole-container .mid-container .mid-details .motto {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
   }
 
   /* Mid container mid details paragraph */
   .whole-container .mid-container .mid-details .paragraph {
+    margin-left: auto;
+    margin-right: auto;
     width: 97%;
     font-size: 20px;
     line-height: 32px;
