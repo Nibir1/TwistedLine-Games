@@ -528,13 +528,8 @@ a {
     margin-left: 0;
   }
 
-  /* Mid container footer */
-  .whole-container .mid-container .footer {
-    margin-left: 0;
-  }
-
   /* Mid container footer horizontal line */
-  .whole-container .mid-container .footer .footer-horizontal-line {
+  .whole-container .mid-container .footer-horizontal-line {
     width: 100%;
     margin-top: 15px;
   }
