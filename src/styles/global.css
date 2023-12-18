@@ -135,7 +135,7 @@ code {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
   margin-top: 10px;
 }
 
@@ -279,7 +279,7 @@ code {
   font-weight: 400;
   line-height: 40px;
 
-  width: 60vw;
+  width: 61vw;
   margin-top: 10px;
   margin-left: 30px;
 }
