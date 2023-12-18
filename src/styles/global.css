@@ -164,6 +164,10 @@ code {
 }
 
 /* ------- From here starts the mid container & navigation container css ------- */
+.remorses-background {
+  background-image: url("/background_picture_mid.png");
+  margin-top: 30px;
+}
 .whole-container .mid-container {
   display: flex;
   flex-direction: column;
@@ -231,9 +235,7 @@ code {
 
 /* ----- This margin top & bottom = Auto is keeping the mid details at the middle ----- */
 .whole-container .mid-container .mid-details {
-  margin-top: 30px;
   margin-bottom: auto;
-  /* margin-left: 30px; */
 }
 
 .whole-container .mid-container .mid-details .number {
@@ -417,6 +419,11 @@ a {
     width: 100%;
     border-left: none;
     border-top: 6px solid #cacaca;
+  }
+
+  .remorses-background {
+    background-image: url("/background_picture_mid.png");
+    margin-top: 30px;
   }
 
   /* Mid container */
