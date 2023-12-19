@@ -35,37 +35,30 @@ code {
   width: 20vw;
 }
 
-.whole-container .left-container .twistedline-home-logo {
+.left-container .twistedline-home-logo {
   width: 100%;
 }
 
-.whole-container .left-container .twistedline-home-logo:hover {
+.twistedline-home-logo:hover {
   content: url("/Twisted_Line_Games_Logo_Hover.svg");
   transform: scale(1.02);
 }
 
-.whole-container .left-container .social-icons {
-  justify-content: space-around;
-}
-.whole-container .left-container .social-icons img {
-  margin: 0 10px;
-}
-.whole-container .left-container .social-icons img:hover {
-  transform: scale(1.15);
-}
-
-.whole-container .left-container .join-discord {
+.left-container .social-links img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 30px;
   border-radius: 5px;
   width: 223px;
   height: 55px;
 }
 
-.whole-container .left-container .join-discord:hover {
+.social-links img:hover {
   transform: scale(1.05);
 }
 
-.whole-container .left-container .copyright {
+.left-container .copyright {
   margin-top: auto;
   margin-bottom: 10px;
 
@@ -89,7 +82,7 @@ code {
   width: 25vw;
 }
 
-.whole-container .right-container h1 {
+.right-container h1 {
   color: #3d3b43;
   font-family: Norse;
   font-size: 40px;
@@ -99,7 +92,7 @@ code {
   margin-top: 30px;
   margin-bottom: 30px; /* Add space between the h1 elements */
 }
-.whole-container .right-container h1:nth-child(2) {
+.right-container h1:nth-child(2) {
   background-color: #cacaca;
   text-align: center;
   width: 100%;
@@ -110,7 +103,7 @@ code {
   justify-content: center;
 }
 
-.whole-container .right-container li {
+.right-container li {
   color: #3d3b43;
   font-family: Akshar;
   font-size: 20px;
@@ -122,7 +115,7 @@ code {
   width: 100%;
 }
 
-.whole-container .right-container button {
+.right-container button {
   width: 152px;
   height: 39.107px;
   flex-shrink: 0;
@@ -139,22 +132,22 @@ code {
   margin-top: 10px;
 }
 
-.whole-container .right-container button:hover {
+.right-container button:hover {
   transform: scale(1.02);
 }
 
-.whole-container .right-container img {
+.right-container img {
   margin-top: auto;
   margin-bottom: 10px;
   width: 80%;
 }
 
-.whole-container .right-container img:hover {
+.right-container img:hover {
   content: url("/Tree_hover.svg");
   width: auto;
 }
 
-.whole-container .right-container .copyright-mobile {
+.right-container .copyright-mobile {
   display: none;
 }
 
@@ -166,6 +159,8 @@ code {
 /* ------- From here starts the mid container & navigation container css ------- */
 .remorses-background {
   background-image: url("/background_picture_mid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 30px;
 }
 .whole-container .mid-container {
@@ -183,10 +178,10 @@ code {
   margin-top: 10px;
 }
 
-.whole-container .mid-container .nav-links img:hover {
+.nav-links img:hover {
   content: url("/Eye_Logo_hover.svg");
 }
-.whole-container .mid-container .nav-links .nav-buttons {
+.nav-links .nav-buttons {
   color: #3d3b43;
   /* color: #e6e6e6; */
   font-family: Norse;
@@ -198,7 +193,7 @@ code {
   position: relative;
 }
 
-.whole-container .mid-container .nav-links .nav-buttons::after {
+.nav-links .nav-buttons::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -206,21 +201,20 @@ code {
   width: 100%;
   height: 2px;
   background-color: #3d3b43;
-  /* background-color: #e6e6e6; */
   transform: translate(0, -50%);
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
-.whole-container .mid-container .nav-links .nav-buttons:hover:after {
+.nav-links .nav-buttons:hover:after {
   opacity: 1;
 }
-.whole-container .mid-container .nav-horizontal-line {
+.mid-container .nav-horizontal-line {
   width: 65vw;
   border-top: 6px solid #cacaca;
   margin-top: 5px;
 }
 
-.whole-container .mid-container .play-our-games {
+.mid-container .play-our-games {
   color: #3d3b43;
   /* color: #e6e6e6; */
   font-family: Norse;
@@ -310,22 +304,6 @@ iframe {
   transform: scale(1.3); /* Scale the image slightly on hover */
 }
 
-.whole-container .mid-container .mid-details button {
-  background-size: cover;
-  background-image: url("/wishlist_button.png");
-  border-radius: 4px;
-  border-width: 3px;
-  border-color: #cacaca;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-  width: 380px;
-  height: 100px;
-  margin-left: 400px;
-  margin-top: 30px;
-}
-.whole-container .mid-container .mid-details button:hover {
-  transform: scale(1.02);
-}
-
 .whole-container .mid-container .footer-horizontal-line {
   width: 65vw;
   border-top: 6px solid #cacaca;
@@ -351,15 +329,38 @@ a {
   color: #3d3b43;
 }
 
-.whole-container .mid-container .remorses-logo {
+/* Remorses Logo wishlist css starts here */
+.mid-details .remorses-logo-wishlist {
+  display: flex;
+  flex-direction: row;
+}
+.remorses-logo-wishlist img {
   width: 565px;
   height: 217.5px;
-  margin-left: 310px;
   margin-top: 30px;
 }
 
+.remorses-logo-wishlist button {
+  background-size: cover;
+  background-image: url("/wishlist_button.png");
+  border-radius: 4px;
+  border-width: 3px;
+  border-color: #cacaca;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 380px;
+  height: 100px;
+  margin-left: 200px;
+  margin-top: 80px;
+}
+
+.remorses-logo-wishlist button:hover {
+  transform: scale(1.02);
+}
+/* Remorses Logo wishlist css ends here */
+
+/* youtube video embed iframe css */
 .whole-container .mid-container .remorses-trailer {
-  margin-left: 300px;
+  margin-left: 30px;
   margin-top: 30px;
   width: 600px;
   height: 355px;
@@ -377,18 +378,14 @@ a {
   .whole-container .left-container {
     width: 100%;
     min-width: 0;
-    height: 55vh;
+    height: 80vh;
   }
 
   .whole-container .left-container .copyright {
     display: none;
   }
 
-  .whole-container .left-container .social-icons {
-    margin-bottom: 20px;
-  }
-
-  .whole-container .left-container .join-discord {
+  .whole-container .left-container .social-links {
     margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -423,6 +420,7 @@ a {
 
   .remorses-background {
     background-image: url("/background_picture_mid.png");
+    background-repeat: no-repeat;
     margin-top: 30px;
   }
 
@@ -478,6 +476,20 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .mid-details .remorses-logo-wishlist {
+    display: flex;
+    flex-direction: column;
+  }
+  .remorses-logo-wishlist img {
+    width: 272.5px;
+    height: 98.75px;
+    margin-left: 60px;
+  }
+
+  .remorses-logo-wishlist button {
+    margin-top: 50px;
   }
 
   /* Mid container mid details number */
