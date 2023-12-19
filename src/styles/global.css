@@ -216,7 +216,6 @@ code {
 
 .mid-container .play-our-games {
   color: #3d3b43;
-  /* color: #e6e6e6; */
   font-family: Norse;
   font-size: 35px;
   font-style: normal;
@@ -391,8 +390,7 @@ a {
   }
 
   .whole-container .left-container .social-links {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 5px;
   }
 
