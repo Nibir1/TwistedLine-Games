@@ -382,7 +382,7 @@ a {
   .whole-container .left-container {
     width: 100%;
     min-width: 0;
-    height: 80vh;
+    height: 90vh;
   }
 
   .whole-container .left-container .copyright {
@@ -390,7 +390,6 @@ a {
   }
 
   .whole-container .left-container .social-links {
-    margin-bottom: 40px;
     border-radius: 5px;
   }
 
