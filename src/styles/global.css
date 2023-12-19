@@ -290,6 +290,11 @@ iframe {
   border-color: #cacaca;
   border-width: 2px;
 }
+
+.mid-details .youtube-sideText {
+  display: flex;
+  flex-direction: row;
+}
 .whole-container .mid-container .mid-details .remorses-snapshots img {
   width: 360px;
   height: 225px;
@@ -476,6 +481,15 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .mid-details .youtube-sideText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtube-sideText h1 {
+    width: auto !important;
   }
 
   .mid-details .remorses-logo-wishlist {
