@@ -39,10 +39,10 @@ code {
   width: 100%;
 }
 
-.twistedline-home-logo:hover {
+/* .twistedline-home-logo:hover {
   content: url("/Twisted_Line_Games_Logo_Hover.svg");
   transform: scale(1.02);
-}
+} */
 
 .left-container .social-links img {
   display: flex;
