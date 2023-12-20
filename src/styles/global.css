@@ -382,7 +382,7 @@ a {
   .whole-container .left-container {
     width: 100%;
     min-width: 0;
-    height: 90vh;
+    height: 100vh;
   }
 
   .whole-container .left-container .copyright {
