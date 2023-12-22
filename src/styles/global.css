@@ -423,6 +423,7 @@ a {
   .remorses-background {
     background-image: url("/background_picture_mid.png");
     background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 30px;
   }
 
