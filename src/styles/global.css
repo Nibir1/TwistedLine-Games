@@ -158,7 +158,7 @@ code {
 
 /* ------- From here starts the mid container & navigation container css ------- */
 .remorses-background {
-  background-image: url("/background_picture_mid.png");
+  background-image: url("/background_picture_mid.gif");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 30px;
@@ -421,7 +421,7 @@ a {
   }
 
   .remorses-background {
-    background-image: url("/background_picture_mid.png");
+    background-image: url("/background_picture_mid_mobile.gif");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 30px;
