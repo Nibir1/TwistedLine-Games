@@ -467,14 +467,14 @@ a {
 
   .whole-container .mid-container .mid-details .remorses-snapshots {
     display: grid;
-    grid-template-columns: repeat(3, 0.1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     margin-left: 1px;
   }
 
   .whole-container .mid-container .mid-details .remorses-snapshots img {
-    width: 124px;
-    height: 73.38px;
+    width: 100%;
+    height: auto;
     border-radius: 7px;
   }
 
