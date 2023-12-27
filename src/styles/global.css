@@ -305,7 +305,7 @@ a {
 /* Remorses Logo wishlist css ends here */
 
 /* Add a new media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   /* Whole container */
   .whole-container {
     flex-direction: column;
@@ -316,7 +316,7 @@ a {
   .whole-container .left-container {
     width: 100%;
     min-width: 0;
-    height: 100vh;
+    height: auto;
   }
 
   .whole-container .left-container .copyright {
@@ -327,6 +327,9 @@ a {
     border-radius: 5px;
   }
 
+  .social-links img {
+    margin-bottom: 15px;
+  }
   .whole-container .copyright-mobile {
     display: flex;
     align-items: center;
@@ -469,7 +472,8 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    margin-left: 1px;
+    margin-left: 5px;
+    margin-right: 10px;
   }
 
   .whole-container .mid-container .mid-details .remorses-snapshots img {
