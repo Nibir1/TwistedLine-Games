@@ -84,8 +84,8 @@ code {
 /* ------- From here starts the mid container & navigation container css ------- */
 .remorses-background {
   background-image: url("/background_picture_mid.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: right 55% bottom 45%;
   margin-top: 30px;
 }
 .whole-container .mid-container {
@@ -355,9 +355,10 @@ a {
   }
 
   .remorses-background {
-    background-image: url("/background_picture_mid_mobile.gif");
-    background-repeat: no-repeat;
+    background-image: url("/background_picture_mid.png");
     background-size: cover;
+    background-position: right 58% bottom 65%;
+    background-clip: inherit;
     margin-top: 30px;
   }
 
@@ -431,7 +432,9 @@ a {
   .remorses-logo-wishlist img {
     width: 272.5px;
     height: 98.75px;
-    margin-left: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .remorses-logo-wishlist button {
