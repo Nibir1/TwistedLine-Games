@@ -84,8 +84,10 @@ code {
 /* ------- From here starts the mid container & navigation container css ------- */
 .remorses-background {
   background-image: url("/background_picture_mid.png");
-  background-size: cover;
-  background-position: right 55% bottom 45%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: right 55% bottom 45%; */
+  background-position: center;
   margin-top: 30px;
 }
 .whole-container .mid-container {
