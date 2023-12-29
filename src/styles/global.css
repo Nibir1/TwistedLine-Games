@@ -84,8 +84,7 @@ code {
 /* ------- From here starts the mid container & navigation container css ------- */
 .remorses-background {
   background-image: url("/background_picture_mid.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   /* background-position: right 55% bottom 45%; */
   background-position: center;
   margin-top: 30px;
@@ -359,8 +358,7 @@ a {
   .remorses-background {
     background-image: url("/background_picture_mid.png");
     background-size: cover;
-    background-position: right 58% bottom 65%;
-    background-clip: inherit;
+    background-position: center;
     margin-top: 30px;
   }
 
