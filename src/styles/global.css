@@ -22,6 +22,7 @@ code {
   flex-direction: row;
   min-height: 100vh;
   width: auto;
+  pointer-events: none;
 }
 
 /* ------------- From here starts Left Container CSS ----------------- */
@@ -38,6 +39,7 @@ code {
 
 .left-container .twistedline-home-logo {
   width: 100%;
+  pointer-events: auto;
 }
 
 .left-container .social-links img {
@@ -48,6 +50,7 @@ code {
   border-radius: 5px;
   width: 223px;
   height: 55px;
+  pointer-events: auto;
 }
 
 .social-links img:hover {
@@ -95,6 +98,7 @@ code {
   align-items: center;
 
   margin-top: 10px;
+  pointer-events: auto;
 }
 
 .nav-links img:hover {
@@ -109,6 +113,7 @@ code {
 
   text-decoration: none;
   position: relative;
+  pointer-events: auto;
 }
 
 .nav-links .nav-buttons::after {
@@ -209,6 +214,7 @@ code {
   border-width: 2px;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
+  pointer-events: auto;
 }
 
 .whole-container .mid-container .mid-details .remorses-snapshots img:hover {
@@ -227,6 +233,7 @@ iframe {
   margin-top: 30px;
   width: 640px;
   height: 395px;
+  pointer-events: auto;
 }
 
 .mid-details .youtube-sideText {
@@ -286,6 +293,7 @@ a {
   height: 100px;
   margin-left: 500px;
   margin-top: 80px;
+  pointer-events: auto;
 }
 
 .remorses-logo-wishlist button:hover {
