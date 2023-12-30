@@ -20,7 +20,7 @@ code {
 .whole-container {
   display: flex;
   flex-direction: row;
-  height: auto;
+  min-height: 100vh;
   width: auto;
 }
 
@@ -39,11 +39,6 @@ code {
 .left-container .twistedline-home-logo {
   width: 100%;
 }
-
-/* .twistedline-home-logo:hover {
-  content: url("/Twisted_Line_Games_Logo_Hover.svg");
-  transform: scale(1.02);
-} */
 
 .left-container .social-links img {
   display: flex;
@@ -83,10 +78,7 @@ code {
 
 /* ------- From here starts the mid container & navigation container css ------- */
 .remorses-background {
-  background-image: url("/background_picture_mid.png");
-  background-size: cover;
-  /* background-position: right 55% bottom 45%; */
-  background-position: center;
+  background-color: black;
   margin-top: 30px;
 }
 .whole-container .mid-container {
@@ -110,7 +102,6 @@ code {
 }
 .nav-links .nav-buttons {
   color: #3d3b43;
-  /* color: #e6e6e6; */
   font-family: Norse;
   font-size: 35px;
   font-style: normal;
@@ -169,7 +160,6 @@ code {
 }
 .whole-container .mid-container .mid-details .headline {
   color: #3d3b43;
-  /* color: #e6e6e6; */
   font-family: Teko;
   font-size: 80px;
   font-style: normal;
@@ -180,7 +170,6 @@ code {
 }
 .whole-container .mid-container .mid-details .motto {
   color: #3d3b43;
-  /* color: #e6e6e6; */
   font-family: Norse;
   font-size: 20px;
   font-style: normal;
@@ -192,7 +181,6 @@ code {
 }
 .whole-container .mid-container .mid-details .paragraph {
   color: #3d3b43;
-  /* color: #e6e6e6; */
   text-align: justify;
   font-family: Akshar;
   font-size: 25px;
@@ -258,7 +246,6 @@ iframe {
 
 .whole-container .mid-container .footer h1 {
   color: #3d3b43;
-  /* color: #e6e6e6; */
   text-align: center;
   font-family: Norse;
   font-size: 22px;
@@ -356,9 +343,7 @@ a {
   }
 
   .remorses-background {
-    background-image: url("/background_picture_mid.png");
-    background-size: cover;
-    background-position: center;
+    background-color: black;
     margin-top: 30px;
   }
 
