@@ -280,6 +280,7 @@ a {
   width: 565px;
   height: 217.5px;
   margin-top: 30px;
+  margin-left: 100px;
 }
 
 .remorses-logo-wishlist button {
@@ -291,8 +292,8 @@ a {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   width: 380px;
   height: 100px;
-  margin-left: 500px;
-  margin-top: 80px;
+  margin-left: 300px;
+  margin-top: 200px;
   pointer-events: auto;
 }
 
