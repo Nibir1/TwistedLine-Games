@@ -369,6 +369,11 @@ a {
     align-items: center;
   }
 
+  .nav-links img {
+    width: 64px;
+    height: 64px;
+  }
+
   /* Mid container navigation buttons */
   .whole-container .mid-container .nav-links .nav-buttons {
     font-size: 20px;
