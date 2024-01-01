@@ -269,6 +269,7 @@ iframe {
 a {
   text-decoration: underline;
   color: #3d3b43;
+  pointer-events: auto;
 }
 
 /* Remorses Logo wishlist css starts here */
