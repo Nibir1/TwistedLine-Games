@@ -311,6 +311,7 @@ a {
   .whole-container {
     flex-direction: column;
     width: 100%;
+    background-color: #e6e6e6;
   }
 
   /* Left container */
