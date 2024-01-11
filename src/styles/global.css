@@ -72,21 +72,6 @@ code {
   letter-spacing: 0.48px;
 }
 
-.left-container .developed-by {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-
-  color: #cacaca;
-  font-family: Akshar;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.48px;
-}
-
 .copyright-mobile {
   display: none;
 }
