@@ -1,48 +1,24 @@
 ---
 import HeaderLink from "../components/HeaderLink.astro";
-import { SEO } from "astro-seo";
+import Seo from "../components/Seo.astro";
 import "../styles/reset.css";
 import "../styles/global.css";
 
-interface Props {
-  title: string;
-}
+// interface Props {
+//   title: string;
+//   description: string;
+//   image: typeof Image;
+//   frontmatter: any;
+//   robots: any;
+// }
 
-const { title } = Astro.props;
+const { title, description, image, frontmatter, robots } = Astro.props;
 const today = new Date();
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <SEO
-      title="TwistedLine Games"
-      description="Home Page Description"
-      openGraph={{
-        basic: {
-          title: "TwistedLine Games",
-          type: "Horror Game",
-          image: "",
-        },
-      }}
-      twitter={{
-        creator: "@TwstdlGames",
-      }}
-      extend={{
-        // extending the default link tags
-        link: [{ rel: "icon", href: "/favicon.ico" }],
-        // extending the default meta tags
-        meta: [
-          {
-            name: "twitter:image",
-            content: "",
-          },
-          { name: "twitter:title", content: "TwistedLine Games" },
-          { name: "twitter:description", content: "Agent" },
-        ],
-      }}
-    />
-
     <meta charset="UTF-8" />
     <meta name="description" content="TwistedLine Games" />
     <meta name="viewport" content="width=device-width" />
@@ -55,6 +31,8 @@ const today = new Date();
       rel="stylesheet"
     />
     <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet" />
+
+    <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
 
     <title>{title}</title>
   </head>
