@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  SITE: "https://twistedlinegames.com/",
+  site: "https://twistedlinegames.com/",
   integrations: [sitemap()],
 });
