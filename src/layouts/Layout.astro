@@ -1,5 +1,6 @@
 ---
 import HeaderLink from "../components/HeaderLink.astro";
+import { SEO } from "astro-seo";
 import "../styles/reset.css";
 import "../styles/global.css";
 
@@ -14,6 +15,34 @@ const today = new Date();
 <!doctype html>
 <html lang="en">
   <head>
+    <SEO
+      title="TwistedLine Games"
+      description="Home Page Description"
+      openGraph={{
+        basic: {
+          title: "TwistedLine Games",
+          type: "Horror Game",
+          image: "",
+        },
+      }}
+      twitter={{
+        creator: "@TwstdlGames",
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "",
+          },
+          { name: "twitter:title", content: "TwistedLine Games" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+
     <meta charset="UTF-8" />
     <meta name="description" content="TwistedLine Games" />
     <meta name="viewport" content="width=device-width" />
