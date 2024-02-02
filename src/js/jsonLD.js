@@ -15,7 +15,7 @@ export default function jsonLDGenerator({ type, post, url }) {
         "description": "${post.description}",
         "image": "${post.image.src}",
         "author": {
-          "@type": "Person",
+          "@type": "Twistedline Games",
           "name": "${post.author}",
           "url": "/author/${slugify(post.author)}"
         },
