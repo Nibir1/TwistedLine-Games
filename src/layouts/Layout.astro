@@ -4,14 +4,6 @@ import Seo from "../components/Seo.astro";
 import "../styles/reset.css";
 import "../styles/global.css";
 
-// interface Props {
-//   title: string;
-//   description: string;
-//   image: typeof Image;
-//   frontmatter: any;
-//   robots: any;
-// }
-
 const { title, description, image, frontmatter, robots } = Astro.props;
 const today = new Date();
 ---
@@ -22,7 +14,7 @@ const today = new Date();
     <meta charset="UTF-8" />
     <meta name="description" content="TwistedLine Games" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/ico+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

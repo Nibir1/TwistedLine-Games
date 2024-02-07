@@ -244,7 +244,7 @@ iframe {
   justify-content: space-evenly;
 }
 
-.youtube-sideText h1 {
+.youtube-sideText p {
   width: 37vw !important;
 }
 
@@ -427,7 +427,7 @@ a {
     flex-direction: column;
   }
 
-  .youtube-sideText h1 {
+  .youtube-sideText p {
     width: auto !important;
   }
 
