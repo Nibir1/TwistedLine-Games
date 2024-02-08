@@ -17,4 +17,4 @@ Features:
 3. Dynamic Content: Leverages Astro's components and data fetching capabilities for easy data management and updates.
 4. TypeScript for Maintainability: Enhances code quality and reusability through type safety and clear interfaces.
 5. Responsive Design: Adapts flawlessly to various devices and screen sizes, including mobile-first optimization.
-6. Beautiful Design: Implements the sleek UI/UX crafted in Figma (link: https://shorturl.at/ituJX).
+6. Beautiful Design: Implements the sleek UI/UX crafted in Figma (link: https://www.behance.net/gallery/183937249/TwistedLineGames-Website).
