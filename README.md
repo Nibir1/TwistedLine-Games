@@ -9,6 +9,8 @@ Technologies:
 Frontend: Astro JS (for fast, content-driven development)
 Language: TypeScript (for robust type safety and maintainability)
 Design: Figma (for collaborative UI/UX design)
+
+
 Features:
 
 SEO-Friendly: Optimised for search engine visibility and organic traffic.
