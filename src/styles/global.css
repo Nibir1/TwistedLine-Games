@@ -57,6 +57,9 @@ code {
   transform: scale(1.05);
 }
 
+.left-container .arrow-mobile {
+  display: none;
+}
 .left-container .copyright {
   margin-top: auto;
   margin-left: auto;
@@ -331,6 +334,25 @@ a {
 
   .social-links img {
     margin-bottom: 15px;
+  }
+
+  .left-container .twistedline-home-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    width: 90%;
+    pointer-events: auto;
+  }
+  .left-container .arrow-mobile {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    column-gap: 300px;
   }
   .whole-container .copyright-mobile {
     display: flex;
