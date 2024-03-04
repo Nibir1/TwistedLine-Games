@@ -351,6 +351,7 @@ a {
   .left-container .arrow-mobile {
     display: flex;
     flex-direction: row;
+    margin-top: -35px;
     margin-bottom: 10px;
     column-gap: 300px;
   }
